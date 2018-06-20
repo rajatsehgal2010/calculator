@@ -1,10 +1,37 @@
 body {
-	background-image: url("img1.jpg");
+	background-image: url("img2.jpg");
 	opacity: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+}
+input[type=text],select {
+    width: 95%;
+    position: relative;
+    left:9px;
+    padding: 12px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+table
+{
+	position: relative;
+	left:470px;
+	top:200px;
+	background-color: #262626;
+	
+}
+.button
+{
+	opacity:0.5;
+}
+.button:hover
+{
+	opacity:1;
 }
 .operator
 {
@@ -31,7 +58,7 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
 }
