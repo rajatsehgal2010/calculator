@@ -17,17 +17,10 @@ input[type=text],select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-table
-{
-	position: relative;
-	left:470px;
-	top:200px;
-	background-color: #262626;
-	
-}
+
 .button
 {
-	opacity:0.5;
+	opacity:0.7;
 }
 .button:hover
 {
@@ -44,12 +37,40 @@ table
 {
 	background-color: #ff1a1a;
 }
-#equal
+#sclr
 {
 	background-color: #3333ff;
 }
+table
+{
+	position: relative;
+	left:470px;
+	top:200px;
+	background-color: #262626;
+	opacity:0.9;
+	
+}
 
-#clall,#equal,.button,.operator
+.button1
+{
+	background-color: black;
+	opacity:0.7;
+	border: none;
+    color: white;
+    padding: 15px 162px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button1:hover{
+	background-color: black;
+	color: white;
+	opacity:1;
+}
+#clall,#sclr,.button,.operator
 {
 	
     border: none;
@@ -61,4 +82,8 @@ table
     font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
+}
+#clall
+{
+	padding:15px 24px;
 }
