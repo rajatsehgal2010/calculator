@@ -5,6 +5,8 @@
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700' rel='stylesheet' type='text/css'>
    </head>  
    <body>
+      <div class="marquee">MyCalc. Try our new update of MyCalc - Contact us on 9999999999</div>
+      <p id="toph">Don't push your mind for calculations now. Try</p>
       <h1 id="hd">MyCalc</h1>
 
      <form name="calculator">
@@ -24,7 +26,7 @@
                <td><input type="button" class="button" value="4" onclick="calculator.display.value += '4'"></td>
                <td><input type="button" class="button" value="5" onclick="calculator.display.value += '5'"></td>
                <td><input type="button" class="button" value="6" onclick="calculator.display.value += '6'"></td>
-               <td><input type="button" class="operator" value="-" onclick="calculator.display.value += ' - '"></td>
+               <td><input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += ' - '"></td>
             </tr>
             <tr>
                <td><input type="button" class="button" value="7" onclick="calculator.display.value += '7'"></td>
@@ -36,7 +38,7 @@
                <td><input type="button" id="clall"  value="AC" onclick="calculator.display.value = ''"></td>
                <td><input type="button" class="button" value="0" onclick="calculator.display.value += '0'"></td>
                <td><input type="button" id="sclr" value="C" onclick="myfunc()"></td>
-               <td><input type="button" class="operator" value="/" onclick="calculator.display.value += ' / '"></td>
+               <td><input type="button" class="operator" name="divs" value="/" onclick="calculator.display.value += ' / '"></td>
             </tr>
             <tr>
                <td colspan="4"><input type="button" id="equal" class="button1" value="=" onclick="myfunc2()"></td>
