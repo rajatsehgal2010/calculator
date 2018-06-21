@@ -32,7 +32,7 @@ else
   if(len!=1){
 	for(i=1;i<len;i+=2)
 	{
-		var c;
+		
        if(str[i]=='/' || str[i]=='x')
        {
        	
@@ -41,7 +41,15 @@ else
           else
             {str[i-1]=parseInt(str[i-1])*parseInt(str[i+1]);}   
        }
-       for(m=i;m<=len-3;m++)
+       else
+       {
+       	if(str[i]=='+')
+          	{str[i-1]=parseInt(str[i-1])+parseInt(str[i+1]);}
+          else
+            {str[i-1]=parseInt(str[i-1])-parseInt(str[i+1]);}  
+
+       }
+       for(m=i;m<len-2;m++)
 		{
 			str[m]=str[m+2];
 		}
