@@ -87,18 +87,43 @@ table
 	opacity:0.7;
 	border: none;
     color: white;
-    padding: 15px 170px;
+    padding: 8px 120px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 30px;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 7px;
+
+	 -webkit-border-radius: 8px;
+    -moz-border-radius: 16px;
+    border-radius: 14px;
+    -webkit-box-shadow: 0px 18px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 9px 0px rgba(219,31,5,1), 0px 9px 25px rgba(0,0,0,.7);
+    
+	
+	
+	
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	transition: all .1s ease;
 }
 .button1:hover{
 	background-color: black;
 	color: white;
 	opacity:1;
+}
+.button1:active
+{
+	-webkit-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+    position: relative;
+    top: 6px;
 }
 #minus,#divs
 {
@@ -140,6 +165,7 @@ table
     box-shadow: 0px 9px 0px rgb(102, 179, 255), 0px 9px 25px rgba(0,0,0,.7);
 
 }
+
 #clall,#sclr
 {
 	
