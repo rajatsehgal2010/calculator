@@ -60,24 +60,24 @@ var i;
   
   console.log(str);
   
-  var sum=parseInt(str[0]);
+  var sum=parseFloat(str[0]);
        for(i=1;i<len;i+=2)
        {
        	
          if(str[i]=='+')
             {
-            	sum=sum+parseInt(str[i+1]);
+            	sum=sum+parseFloat(str[i+1]);
             }
          else
          {
-         	sum=sum-parseInt(str[i+1]);
+         	sum=sum-parseFloat(str[i+1]);
          }	
 
        }
   
 }
 
-return parseFloat(sum);
+return sum;
 }
 /*
 else
