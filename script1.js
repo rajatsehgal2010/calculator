@@ -20,46 +20,64 @@ function myfunc2()
         }
 	}
 if(b==0)
-	{document.getElementById("display").value="NOT DEFINED";
+	{return "Hey!!!   I AM INFINITY";
 }
 else
 {
 	
-	str=a.split(" ");
+	var str=a.split(" ");
 	var len=str.length;
-	
-	
-  if(len!=1){
-	for(i=1;i<len;i+=2)
-	{
-		
+
+var i;
+  
+         for(i=1;i<len && len!=1;i+=2)
+  {
+    
+    
+    
        if(str[i]=='/' || str[i]=='x')
        {
-       	
+        
           if(str[i]=='/')
-          	{str[i-1]=parseInt(str[i-1])/parseInt(str[i+1]);}
-          else
-            {str[i-1]=parseInt(str[i-1])*parseInt(str[i+1]);}   
-       }
-       else
-       {
-       	if(str[i]=='+')
-          	{str[i-1]=parseInt(str[i-1])+parseInt(str[i+1]);}
-          else
-            {str[i-1]=parseInt(str[i-1])-parseInt(str[i+1]);}  
 
+
+            {str[i-1]=parseFloat(str[i-1])/parseFloat(str[i+1]);}
+          else
+            {str[i-1]=parseFloat(str[i-1])*parseFloat(str[i+1]);}   
+       
+            if(i+2 != len){
+             for(m=i;m<len-2;m++)
+            
+            {
+              str[m]=str[m+2];
+            }
+            
+            }
+              len=len-2;
+          i-=2;
        }
-       for(m=i;m<len-2;m++)
-		{
-			str[m]=str[m+2];
-		}
-		len=len-2;
-	}
   }
-}
-	
-	document.getElementById("display").value=str[0];
+  
+  console.log(str);
+  
+  var sum=parseInt(str[0]);
+       for(i=1;i<len;i+=2)
+       {
+       	
+         if(str[i]=='+')
+            {
+            	sum=sum+parseInt(str[i+1]);
+            }
+         else
+         {
+         	sum=sum-parseInt(str[i+1]);
+         }	
 
+       }
+  
+}
+
+return parseFloat(sum);
 }
 /*
 else
